@@ -11,7 +11,7 @@ window.addEventListener('resize', resizeCanvas);
 resizeCanvas();
 
 // Initialize FaceMesh
-const faceMesh = new FaceMesh.FaceMesh({
+const faceMesh = new FaceMesh({
   locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/${file}`,
 });
 faceMesh.setOptions({
